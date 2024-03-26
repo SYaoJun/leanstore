@@ -1,3 +1,8 @@
+# 2024.3.26
+- 没有单元测试，代码质量不能保证。
+- 依赖SSD，没有SSD甚至都不能运行。
+- `KVInterface`提供CRUD接口。
+
 # LeanStore
 
 [LeanStore](https://db.in.tum.de/~leis/papers/leanstore.pdf) is a high-performance OLTP storage engine optimized for many-core CPUs and NVMe SSDs. Our goal is to achieve performance comparable to in-memory systems when the data set fits into RAM, while being able to fully exploit the bandwidth of fast NVMe SSDs for large data sets. While LeanStore is currently a research prototype, we hope to make it usable in production in the future.

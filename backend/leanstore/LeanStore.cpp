@@ -61,6 +61,7 @@ LeanStore::LeanStore()
    if (FLAGS_trunc) {
       flags |= O_TRUNC | O_CREAT;
    }
+   // FLAGS_ssd_path = "/root/myfile";
    ssd_fd = open(FLAGS_ssd_path.c_str(), flags, 0666);
    if (ssd_fd == -1) {
       perror("posix error");
