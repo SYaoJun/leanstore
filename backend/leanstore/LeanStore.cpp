@@ -27,6 +27,7 @@
 
 #include <locale>
 #include <sstream>
+#include <iostream>
 // -------------------------------------------------------------------------------------
 using namespace tabulate;
 using leanstore::utils::threadlocal::sum;
@@ -36,6 +37,7 @@ namespace leanstore
 // -------------------------------------------------------------------------------------
 LeanStore::LeanStore()
 {
+
    // LeanStore::addStringFlag("ssd_path", &FLAGS_ssd_path);
    if (FLAGS_recover_file != "./leanstore.json") {
       FLAGS_recover = true;
