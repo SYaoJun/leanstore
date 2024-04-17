@@ -1,0 +1,1 @@
+./build/frontend/minimal_example --ssd_path=/home/ubuntu/data/test.txt --pp_threads=0
