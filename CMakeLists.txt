@@ -1,7 +1,8 @@
 # ---------------------------------------------------------------------------
 # Leanstore DB
 # ---------------------------------------------------------------------------
-
+set(CMAKE_C_COMPILER "/usr/bin/clang")
+set(CMAKE_CXX_COMPILER "/usr/bin/clang++")
 project(leanstoredb)
 cmake_minimum_required(VERSION 3.7)
 
@@ -9,10 +10,12 @@ cmake_minimum_required(VERSION 3.7)
 # Environment
 # ---------------------------------------------------------------------------
 enable_language(ASM)
+
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread -rdynamic")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
+add_link_options(-rdynamic)
 set(CMAKE_BUILD_TYPE RelWithDebInfo)
 #set(CMAKE_BUILD_TYPE Debug)
 if (CMAKE_SYSTEM_PROCESSOR MATCHES "(x86)|(X86)|(amd64)|(AMD64)")
