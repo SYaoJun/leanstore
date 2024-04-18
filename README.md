@@ -1,3 +1,11 @@
+# 2-Tree
+1. tcmalloc链接有点问题，我做的全路径链接
+2. rocksdb要使用zxj自己仓库中的版本
+## 编译
+```sh
+make -j 4  > make.log 2>&1
+```
+
 # TieredIndexing
 Tiered Indexing is a general way to improve the memory utilization of buffer-managed data structures including B+tree, Hashing, Heap, and Log-Structured-Merge Tree. It is generalization of [2-Tree](https://www.cidrdb.org/cidr2023/papers/p57-zhou.pdf). The philosophy of Tiered Indexing is to maintain a hierarchy of homogeneous index structures with different hotness that share a buffer pool. Tiered Indexing actively performs efficient inter-tier record migration based on record hotness. 
 
