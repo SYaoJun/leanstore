@@ -1,4 +1,12 @@
 # leanstore
+## ubuntu-22.04
+直接用gcc编译就行，不需要用clang
+目前的commit-id是fbc05ea93370ee5404605a02a4c234b7870511e9
+```c
+apt update -y
+apt-get install cmake libtbb2-dev libaio-dev libsnappy-dev zlib1g-dev libbz2-dev liblz4-dev libzstd-dev librocksdb-dev liblmdb-dev libwiredtiger-dev liburing-dev -y
+```
+## 编译
 ```sh
 git clone https://github.com/SYaoJun/leanstore.git
 cd leanstore
