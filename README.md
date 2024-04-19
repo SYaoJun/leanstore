@@ -27,3 +27,10 @@ sudo docker exec -it leanstore_container /bin/bash
 ```
 ## 关于docker问题
 苹果M1芯片上如何用docker虚拟出x86_64的镜像？
+## 其他
+如果gflags设置的变量不通过命令传递，默认值是什么？
+```
+--wal = true
+```
+## 日志
+似乎leanstore启动起来之后，没有专门的日志目录，对于记录执行路径的定位不是很方便

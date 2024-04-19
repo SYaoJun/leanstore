@@ -50,6 +50,7 @@ class BTreeGeneric
    Swip<BufferFrame> meta_node_bf;  // kept in memory
    atomic<u64> height = 1;
    DTID dt_id;
+   // 是否开日志，是否支持批量插入？
    struct Config {
       bool enable_wal = true;
       bool use_bulk_insert = false;

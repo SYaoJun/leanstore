@@ -11,8 +11,8 @@ find_package(Git REQUIRED)
 ExternalProject_Add(
         rocksdb_src
         PREFIX "vendor/rocksdb"
-        GIT_REPOSITORY "https://github.com/facebook/rocksdb.git"
-        GIT_TAG abd4b1ff1504ae2a7ed6e60bc9c9797b880c33a5
+        GIT_REPOSITORY "https://github.com/SYaoJun/rocksdb-7.1.1.git"
+        GIT_TAG main
         GIT_SHALLOW TRUE
         TIMEOUT 10
         CONFIGURE_COMMAND ""

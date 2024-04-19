@@ -64,6 +64,8 @@ struct LeanStoreAdapter : Adapter<Record> {
    {
       u8 folded_key[Record::maxFoldLength()];
       u16 folded_key_len = Record::foldKey(folded_key, key);
+      // 在这里通过B树插入，直接将key-value插入到B+树上吗？
+      // 1. 页面布局是怎样的？
       const OP_RESULT res = btree->insert(folded_key, folded_key_len, (u8*)(&record), sizeof(Record));
       ensure(res == leanstore::OP_RESULT::OK || res == leanstore::OP_RESULT::ABORT_TX);
       if (res == leanstore::OP_RESULT::ABORT_TX) {
