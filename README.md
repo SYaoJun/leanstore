@@ -1,6 +1,17 @@
 # 2-Tree
-1. tcmalloc链接有点问题，我做的全路径链接
-2. rocksdb要使用zxj自己仓库中的版本
+1. tcmalloc链接有点问题，我做的全路径链接（已修复）
+2. rocksdb要使用zxj自己仓库中的版本（用的我自己修改过的rocksdb版本）
+## 依赖包
+安装rocksdb有点慢（跟CPU的核有关，如果只有单核估计要1个小时），其他的编译速度还可以。
+```sh
+apt install libjemalloc-dev -y
+apt install libgflags-dev -y
+apt install autoconf automake -y
+# 安装tcmalloc
+apt-get install libgoogle-perftools-dev -y
+
+apt-get install cmake libtbb2-dev libaio-dev libsnappy-dev zlib1g-dev libbz2-dev liblz4-dev libzstd-dev librocksdb-dev liblmdb-dev libwiredtiger-dev liburing-dev -y
+```
 ## 编译
 ```sh
 make -j 4  > make.log 2>&1
