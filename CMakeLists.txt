@@ -11,7 +11,7 @@ cmake_minimum_required(VERSION 3.7)
 # Environment
 # ---------------------------------------------------------------------------
 enable_language(ASM)
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/libs/")
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread -fno-omit-frame-pointer -g3 -static-libstdc++")
@@ -63,7 +63,7 @@ include("${CMAKE_SOURCE_DIR}/libs/rapidjson.cmake")
 #include("${CMAKE_SOURCE_DIR}/libs/psql.cmake")
 #include("${CMAKE_SOURCE_DIR}/libs/gdouble.cmake")
 #include("${CMAKE_SOURCE_DIR}/libs/turbo.cmake")
-#nclude("${CMAKE_SOURCE_DIR}/libs/lz4.cmake")
+#include("${CMAKE_SOURCE_DIR}/libs/lz4.cmake")
 
 # ---------------------------------------------------------------------------
 # Includes
